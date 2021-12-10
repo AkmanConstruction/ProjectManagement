@@ -11,7 +11,6 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
     <title>Adminmart Template - The Ultimate Multipurpose admin template</title>
-    <!-- This page css -->
     <!-- Custom CSS -->
     <link href="dist/css/style.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -230,12 +229,13 @@
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="Project.html" class="sidebar-link">
+                                    <a href="form-inputs.html" class="sidebar-link">
                                         <span class="hide-menu">
-                                            Project
+                                            Form Inputs
                                         </span>
                                     </a>
                                 </li>
+
                             </ul>
                         </li>
                     </ul>
@@ -257,7 +257,24 @@
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="col-7 align-self-center">
-                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Contact List</h4>
+                        <h4 class="page-title text-truncate text-dark font-weight-medium mb-1">Form Input Grid</h4>
+                        <div class="d-flex align-items-center">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb m-0 p-0">
+                                    <li class="breadcrumb-item"><a href="index.html" class="text-muted">Home</a></li>
+                                    <li class="breadcrumb-item text-muted active" aria-current="page">Library</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-5 align-self-center">
+                        <div class="customize-input float-right">
+                            <select class="custom-select custom-select-set form-control bg-white border-0 custom-shadow custom-radius">
+                                <option selected>Aug 19</option>
+                                <option value="1">July 19</option>
+                                <option value="2">Jun 19</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -271,98 +288,63 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
-                <!-- basic table -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="table-responsive">
-                                    <table id="zero_config" class="table table-striped table-bordered no-wrap">
-                                        <thead>
-                                            <tr>
-                                                <th>Company Name</th>
-                                                <th>Name Surname</th>
-                                                <th>Phone</th>
-                                                <th>Email</th>
-                                                <th>Notes</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>276377</td>
-                                                <td>Elegant Admin</td>
-                                                <td>Eric Pratt</td>
-                                                <td>2018/05/01</td>
-                                                <td>Fazz</td>
-                                            </tr>
-                                            <tr>
-                                                <td>1234251</td>
-                                                <td>AdminX Admin</td>
-                                                <td>Nirav Joshi</td>
-                                                <td>2018/05/11</td>
-                                                <td>Steve</td>
-                                            </tr>
-                                        </tbody>
-                                        <tfoot>
+                                <h4 class="card-title">New Project</h4>
+                                <form action= $Template fopen ("prname".php")>
+                                    <div class="form-body">
+                                        <label>Project Name </label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="col-md-4" name="prName">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Project Number </label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="col-md-4" name="prNumber">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label>Project Address </label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="col-md-4" name="address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <div class="text-right">
+                                                <button type="submit" class="btn btn-info">Add</button>
+                                                <button type="reset" class="btn btn-dark">Reset</button>
+                                            </div>
+                                        </div>
 
-
-                                        </tfoot>
-
-                                    </table>
-                                    <ul class="pagination float-right">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <form class="mt-5">
-                                    <label> New Contact </label>
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="company name" name="company">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="name" name="fname">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="phone" name="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="email" name="email">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="notes" name="notes">
-                                            </div>
-                                        </div>
                                     </div>
-                                    <div class="text-right">
-                                        <button type="submit" class="btn btn-info">Add</button>
-                                        <button type="reset" class="btn btn-dark">Reset</button>
-                                    </div>
-
                                 </form>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
 
+
+
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
             </div>
             <!-- ============================================================== -->
             <!-- End Container fluid  -->
@@ -389,13 +371,19 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- apps -->
     <!-- apps -->
     <script src="dist/js/app-style-switcher.js"></script>
     <script src="dist/js/feather.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
     <script src="assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="assets/extra-libs/sparkline/sparkline.js"></script>
+    <!--Wave Effects -->
+    <!-- themejs -->
+    <!--Menu sidebar -->
     <script src="dist/js/sidebarmenu.js"></script>
     <!--Custom JavaScript -->
     <script src="dist/js/custom.min.js"></script>

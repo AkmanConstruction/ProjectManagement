@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Template"
+    "\\Template",
+    "\\Template\\assets\\extra-libs",
+    "\\Template\\assets\\images",
+    "\\Template\\dist\\css",
+    "\\Template\\dist\\css\\fonts",
+    "\\Template\\dist\\css\\icons\\font-awesome",
+    "\\Template\\dist\\css\\icons\\font-awesome\\css",
+    "\\Template\\scss",
+    "\\Template\\scss\\config\\default"
   ],
+  "SelectedNode": "\\Template\\form-checkbox-radio.html",
   "PreviewInSolutionExplorer": false
 }
